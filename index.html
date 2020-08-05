@@ -8,13 +8,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
         .container-sm {
-            position:absolute;
-            top:10px;
-            right:10px;
-            height:fit-content;
-            width: fit-content;
             font-size: 12px; 
-            background-color: beige;
+        }
+        #one {
+            top: 0;
+            right: 0;
+            text-align: right;
+            position: absolute;
+            padding: 5px;
+            color: black;
+           }
+        #two{
+            top: 0;
+            right: 10;
+            text-align: right;
+            position: relative;
+            padding: 5px;
+            color: black;
+        }
+        #Search_bar {
+            text-align: center;
+            padding: 100px;
+            height: 500px;
+            width: 100%;
         }
     </style>
 </head>
@@ -22,10 +38,15 @@
 <body>
     </div>
     <div class="container-sm">
+        <div id='one'>
         <a href='https://www.google.co.in/imghp?hl=en&tab=wi&authuser=0&ogbl'>Images</a>
+        </div>
+        <div id='two'>
         <a href='https://www.google.com/advanced_search'>Advanced Search</a>
+        </div>
     </div>
     <div id='Search_bar'>
+    <img src='/Users/Kiran/Pictures/Google.gif' alt='Image Not loading' width='300'>
     <form action="https://google.com/search">
         <input type="text" name="q">
         <input type="submit" value="Google Search">
