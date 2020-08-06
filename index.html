@@ -9,20 +9,22 @@
     <style>
         .container-sm {
             font-size: 12px; 
+            display: inline-flex;
+            flex-wrap: wrap;
         }
         #one {
             top: 0;
-            right: 0;
+            right: 10px;
             text-align: right;
-            position: absolute;
+            position: fixed;
             padding: 5px;
             color: black;
            }
         #two{
             top: 0;
-            right: 10;
+            right: 60px;
             text-align: right;
-            position: relative;
+            position: fixed;
             padding: 5px;
             color: black;
         }
@@ -31,6 +33,9 @@
             padding: 100px;
             height: 500px;
             width: 100%;
+        }
+        #Google-Search-Button{
+            padding: 5px;
         }
     </style>
 </head>
@@ -42,16 +47,15 @@
         <a href='https://www.google.co.in/imghp?hl=en&tab=wi&authuser=0&ogbl'>Images</a>
         </div>
         <div id='two'>
-        <a href='https://www.google.com/advanced_search'>Advanced Search</a>
+        <a href='https://www.google.com/advanced_search'>Advanced</a>
         </div>
     </div>
     <div id='Search_bar'>
     <img src='/Users/Kiran/Pictures/Google.gif' alt='Image Not loading' width='300'>
     <form action="https://google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
+        <div><input type="text" name="q"></div>
+        <div ><button type="submit" class="btn btn-light">Google Search</button></div>
     </form>
     </div>
 </body>
-
 </html>
