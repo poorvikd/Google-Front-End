@@ -28,25 +28,61 @@
             padding: 5px;
             color: black;
         }
-        #Search_bar {
+        #middle {
             text-align: center;
             padding: 100px;
             height: 500px;
             width: 100%;
+            
+        }
+        #search-bar{
+            flex: 1;
+            display: flex;
+            padding: 5px 8px 0 16px;
+            padding-left: 14px;
+            border: none;
+
+        }
+        
+
+        #button{
+            padding-top: 18px;
+            top: 53px;
         }
         #bar{
-        background: #fff;
-        display: flex;
-        border: 1px solid #dfe1e5;
-        box-shadow: none;
-        border-radius: 24px;
-        z-index: 3;
-        height: 44px;
-        margin: 0 auto;
-        width: 482px;
+            background: #fff;
+            display: flex;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            z-index: 3;
+            height: 44px;
+            margin: 0 auto;
+            min-width: 482px;
         }
-        #Google-Search-Button{
-            padding: 5px;
+        #bar:hover{
+            box-shadow: 1px 1px 8px 1px #dcdcdc;
+        }
+        .btn btn-light{
+            
+            background-color: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            color: #5F6368;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        #img{
+            height:110px;
+            width:auto;
         }
     
     </style>
@@ -56,17 +92,17 @@
     </div>
     <div class="container-sm">
         <div id='one'>
-        <a href='https://www.google.co.in/imghp?hl=en&tab=wi&authuser=0&ogbl'>Images</a>
+        <a href='https://www.google.co.in/imghp?hl=en&tab=wi&authuser=0&ogbl' style='color:black;'>Images</a>
         </div>
         <div id='two'>
-        <a href='https://www.google.com/advanced_search'>Advanced</a>
+        <a href='https://www.google.com/advanced_search' style='color:black;'>Advanced</a>
         </div>
     </div>
-    <div id='Search_bar'>
-    <img src='/Users/Kiran/Pictures/Google.gif' alt='Image Not loading' width='300'>
+    <div id='middle'>
+    <a href="https://www.google.com/doodles?hl=en-GB#archive"><img id='img' src='covid-doodle.gif' alt='Image Not loading' width='300'></a>
     <form action="https://google.com/search">
-        <div><input type="text" name="q" id='bar'></div>
-        <div ><button type="submit" class="btn btn-light">Google Search</button>
+        <div id= 'search-bar'><input type="text" name="q" id='bar'></div>
+        <div id='button'><button type="submit" class="btn btn-light">Google Search</button>
             <button type="submit" class="btn btn-light">I'm Feeling Lucky!</button>
         </div>
     </form>
