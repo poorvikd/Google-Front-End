@@ -22,7 +22,7 @@
            }
         #two{
             top: 0;
-            right: 60px;
+            right: 71px;
             text-align: right;
             position: fixed;
             padding: 5px;
@@ -34,9 +34,21 @@
             height: 500px;
             width: 100%;
         }
+        #bar{
+        background: #fff;
+        display: flex;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 24px;
+        z-index: 3;
+        height: 44px;
+        margin: 0 auto;
+        width: 482px;
+        }
         #Google-Search-Button{
             padding: 5px;
         }
+    
     </style>
 </head>
 
@@ -53,8 +65,10 @@
     <div id='Search_bar'>
     <img src='/Users/Kiran/Pictures/Google.gif' alt='Image Not loading' width='300'>
     <form action="https://google.com/search">
-        <div><input type="text" name="q"></div>
-        <div ><button type="submit" class="btn btn-light">Google Search</button></div>
+        <div><input type="text" name="q" id='bar'></div>
+        <div ><button type="submit" class="btn btn-light">Google Search</button>
+            <button type="submit" class="btn btn-light">I'm Feeling Lucky!</button>
+        </div>
     </form>
     </div>
 </body>
