@@ -86,11 +86,12 @@
         }
 
         #img {
+            align-items: center;
             height: 110px;
             width: auto;
         }
 
-        #icon {
+        .icon {
             display: flex;
             align-items: center;
             padding-right: 13px;
@@ -98,10 +99,11 @@
         }
 
         .voice {
-            height: 20px;
+            height: 24px;
+            width: auto;
             position: relative;
             top: 3px;
-            left: 1px;
+            left: 5px;
         }
 
         .search {
@@ -122,39 +124,44 @@
         *:focus {
             outline: none;
         }
+        #wrapper {
+            margin-left:auto;
+            margin-right:auto;
+            width:960px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container-sm">
-        <div id='one'>
-            <a href='index.html' style='color:black;'>Search</a>
-        </div>
-        <div id='two'>
-            <a href='https://www.google.com/advanced_search' style='color:black;'>Advanced</a>
-        </div>
-    </div>
-    <div id='middle'>
-        <a href="https://www.google.com/doodles/wear-a-mask-save-lives-aug-5"><img id='img' src='google-image.png'
-                alt='Image Not loading' width='300'></a>
-        <form action="https://www.google.com/search?">
-            <input type="hidden" name="tbm" value="isch">
-            <div class='search-bar'>
-                <div id='bar'>
-                    <div id='icon'>
-                        <img class="search" src="search.png">
-                    </div>
-                    <div id='text'>
-                        <input type="text" name="q" style='border:none; margin: 3px; width:415px;'>
-                    </div>
-                    <div id='icon' style='vertical-align: middle;'>
-                        <img class="voice"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png">
-                    </div>
-                </div>
-
+    <div id='wrapper'>
+        <div class="container-sm">
+            <div id='one'>
+                <a href='index.html' style='color:black;'>Search</a>
             </div>
-        </form>
+            <div id='two'>
+                <a href='https://www.google.com/advanced_search' style='color:black;'>Advanced</a>
+            </div>
+        </div>
+        <div id='middle'>
+            <img id='img' src='google-image.png' alt='Image Not loading' width='300'>
+            <form action="https://www.google.com/search?">
+                <input type="hidden" name="tbm" value="isch">
+                <div class='search-bar'>
+                    <div id='bar'>
+                        <div class='icon'>
+                            <img class="search" src="search.png">
+                        </div>
+                        <div id='text'>
+                            <input type="text" name="q" style='border:none; margin: 3px; width:415px;'>
+                        </div>
+                        <div class='icon' style='vertical-align: middle;'>
+                            <input class="voice" type="image" src="blue-search.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
