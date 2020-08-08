@@ -1,9 +1,161 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Images</title>
-    </head>
-    <body>
-        GOOGLE IMAGES
-    </body>
+<html lang="en">
+
+<head>
+    <title>Images</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .container-sm {
+            font-size: 12px;
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+
+        #one {
+            top: 0;
+            right: 10px;
+            text-align: right;
+            position: fixed;
+            padding: 5px;
+            color: black;
+        }
+
+        #two {
+            top: 0;
+            right: 71px;
+            text-align: right;
+            position: fixed;
+            padding: 5px;
+            color: black;
+        }
+
+        #middle {
+            text-align: center;
+            margin: 50px;
+            padding: 100px;
+            height: 500px;
+            width: 100%;
+        }
+
+        .search-bar {
+            flex: 1;
+            display: flex;
+            padding: 5px 8px 0 16px;
+            padding-left: 14px;
+            border: none;
+        }
+
+        #button {
+            padding-top: 18px;
+            top: 53px;
+        }
+
+        #bar {
+            background: #fff;
+            display: flex;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            z-index: 3;
+            height: 44px;
+            margin: 0 auto;
+            min-width: 482px;
+        }
+
+        #bar:hover {
+            box-shadow: 1px 1px 8px 1px #dcdcdc;
+        }
+
+        .btn btn-light {
+            background-color: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            color: #5F6368;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        #img {
+            height: 110px;
+            width: auto;
+        }
+
+        #icon {
+            display: flex;
+            align-items: center;
+            padding-right: 13px;
+            margin-top: -5px;
+        }
+
+        .voice {
+            height: 20px;
+            position: relative;
+            top: 3px;
+            left: 1px;
+        }
+
+        .search {
+            height: 20px;
+            position: relative;
+            top: 3px;
+            left: 10px;
+            right: 6px;
+
+        }
+
+        #text {
+            display: flex;
+            border: none;
+            min-width: 150px;
+        }
+
+        *:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div id='one'>
+            <a href='index.html' style='color:black;'>Search</a>
+        </div>
+        <div id='two'>
+            <a href='https://www.google.com/advanced_search' style='color:black;'>Advanced</a>
+        </div>
+    </div>
+    <div id='middle'>
+        <a href="https://www.google.com/doodles/wear-a-mask-save-lives-aug-5"><img id='img' src='google-image.png'
+                alt='Image Not loading' width='300'></a>
+        <form action="https://www.google.com/search?">
+            <input type="hidden" name="tbm" value="isch">
+            <div class='search-bar'>
+                <div id='bar'>
+                    <div id='icon'>
+                        <img class="search" src="search.png">
+                    </div>
+                    <div id='text'>
+                        <input type="text" name="q" style='border:none; margin: 3px; width:415px;'>
+                    </div>
+                    <div id='icon' style='vertical-align: middle;'>
+                        <img class="voice"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+
 </html>
