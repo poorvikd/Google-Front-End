@@ -29,7 +29,7 @@
             right: 10px;
             text-align: right;
             position: fixed;
-            padding: 5px;
+            padding: 10px;
             color: black;
         }
         #img{
@@ -37,8 +37,69 @@
             right: 71px;
             text-align: right;
             position: fixed;
-            padding: 5px;
+            padding: 10px;
             color: black;
+        }
+        #wrapper{
+            margin-left:auto;
+            margin-right:auto;
+            width:960px;
+        }
+        #mid-1{
+            display: block;
+            color: #d93025;
+            font-size: 20px;
+            margin: 25px 35px;
+        }
+        .adv-opt{
+            float:left;
+            display: inline-block;
+            margin: 40px 2% 0 45px;
+            max-width: 1140px;
+            min-width: 200px;
+            width: 96%;
+            background-color: blue;
+        }
+        #bottom-border{
+            border-bottom: 1px solid #ebebeb;
+        }
+        .structure{
+            min-width: 167px;
+            width: 16%;
+            height: 42px;
+            color: #333;
+            vertical-align: middle;
+            background-color: #d93025;
+        }
+        #text-find-pages{
+            margin:5px;
+            height: 30px;
+            display: table-cell;
+            font-size: 16px;
+        }
+        .q{
+            font-size: 13px;
+            margin:5px;
+            height: 30px;
+            display: table-cell;
+        }
+        .q-box{
+            display: inline-block;
+            min-width: 167px;
+            min-height: 41px;
+            vertical-align: middle;
+            width: 50%;
+        }
+        .q-box-struct{
+            border-radius: 1px;
+            border: 1px solid #d9d9d9;
+            border-top: 1px solid #c0c0c0;
+            font-size: 13px;
+            height: 25px;
+            padding: 1px 8px;
+        }
+        #form{
+            float: left;
         }
         
     </style>
@@ -55,4 +116,36 @@
             <a href='image.html' style='color:black;'>Images</a>
         </div>
     </div>
+    <div id="mid-1">
+        Advanced Search
+    </div>
+    <div id='bottom-border'></div>
+    <div class="adv-opt">
+        <div>
+            <div class='structure'>
+                <div id='text-find-pages'>Find pages with...</div>
+            </div>
+            <div class='structure'>
+                <div class='q'>all these words:</div>
+            </div>
+            <div class='structure'>
+                <div class='q'>this exact word or phrase:</div>
+            </div>
+            <div class='structure'>
+                <div class='q'>any of these words:</div>
+            </div>
+            <div class='structure'>
+                <div class='q'>none of these words:</div>
+            </div>
+        </div>
+        <div>
+            <form action="https://www.google.com/advanced_search">
+            </form>
+        </div>
+    </div>
+    
+
 </body>
+<div class='q-box'>
+    <input class='q-box-structure' type="text" name="q1">
+</div>
