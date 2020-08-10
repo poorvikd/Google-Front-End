@@ -52,24 +52,21 @@
             margin: 25px 35px;
         }
         .adv-opt{
-            float:left;
-            display: inline-block;
             margin: 40px 2% 0 45px;
             max-width: 1140px;
             min-width: 200px;
             width: 96%;
-            background-color: blue;
         }
         #bottom-border{
             border-bottom: 1px solid #ebebeb;
         }
         .structure{
+            display: inline-block;
             min-width: 167px;
             width: 16%;
             height: 42px;
             color: #333;
             vertical-align: middle;
-            background-color: #d93025;
         }
         #text-find-pages{
             margin:5px;
@@ -90,16 +87,33 @@
             vertical-align: middle;
             width: 50%;
         }
-        .q-box-struct{
+        .q-box-structure{
             border-radius: 1px;
             border: 1px solid #d9d9d9;
             border-top: 1px solid #c0c0c0;
             font-size: 13px;
             height: 25px;
             padding: 1px 8px;
+            width: 100%;
+            text-align: left;
         }
-        #form{
-            float: left;
+        #submit-button{
+            user-select: none;
+            line-height: 100%;
+            height: 30px;
+            min-width: 120px;
+            float: right;
+            margin: 10px 0;
+            padding: 0 12px;
+            box-shadow: none;
+            background-color: #4d90fe;
+            border: 1px solid #3079ed;
+            color: #fff;
+            border-radius: 2px;
+            font-size: 11px;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
         }
         
     </style>
@@ -121,31 +135,55 @@
     </div>
     <div id='bottom-border'></div>
     <div class="adv-opt">
-        <div>
-            <div class='structure'>
-                <div id='text-find-pages'>Find pages with...</div>
+        <form action="https://www.google.com/search?"></form>
+            <div>
+                <div class='structure'>
+                    <div id='text-find-pages'>Find pages with...</div>
+                </div>
             </div>
-            <div class='structure'>
-                <div class='q'>all these words:</div>
+            <div>
+                <div class='structure'>
+                    <div class='q'>all these words:</div>
+                </div>
+                <div class='q-box'>
+                    <input class='q-box-structure' type="text" name="as_q">
+                </div>
             </div>
-            <div class='structure'>
-                <div class='q'>this exact word or phrase:</div>
+            <div>
+                <div class='structure'>
+                    <div class='q'>this exact word or phrase:</div>
+                </div>
+                <div class='q-box'>
+                    <input class='q-box-structure' type="text" name="as_epq">
+                </div>
             </div>
-            <div class='structure'>
-                <div class='q'>any of these words:</div>
+            <div>
+                <div class='structure'>
+                    <div class='q'>any of these words:</div>
+                </div>
+                <div class='q-box'>
+                    <input class='q-box-structure' type="text" name="as_oq">
+                </div>
             </div>
-            <div class='structure'>
-                <div class='q'>none of these words:</div>
+            <div>
+                <div class='structure'>
+                    <div class='q'>none of these words:</div>
+                </div>
+                <div class='q-box'>
+                    <input class='q-box-structure' type="text" name="as_eq">
+                </div>
             </div>
-        </div>
-        <div>
-            <form action="https://www.google.com/advanced_search">
-            </form>
-        </div>
+            <div>
+                <div class='structure'>
+                    <div class='q'></div>
+                </div>
+                <div class='q-box'>
+                    <button type="submit" class="btn btn-primary" id='submit-button'>Advanced Search</button>
+                </div>
+            </div>
+        </form>
     </div>
-    
+    <div>
 
+    </div>
 </body>
-<div class='q-box'>
-    <input class='q-box-structure' type="text" name="q1">
-</div>
