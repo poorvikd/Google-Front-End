@@ -42,7 +42,8 @@
             padding-left: 14px;
             border: none;
         }
-        #button{
+        .button{
+            display: inline-block;
             padding-top: 18px;
             top: 53px;
         }
@@ -147,12 +148,16 @@
                     </div>
                     
                 </div>
-                <div id='button'>
+                <div class='button'>
                     <button type="submit" class="btn btn-light">Google Search</button>
-                    <button type="submit" class="btn btn-light">I'm Feeling Lucky!</button>
+                </div>
+                <div class='button'>
+                    <button type="submit" class="btn btn-light" name='btnI' value="1">I'm Feeling Lucky!</button>
                 </div>
             </form>
         </div>
     </div>
 </body>
+
 </html>
+
